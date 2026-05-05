@@ -12,7 +12,7 @@ Este site serve como:
 
 ---
 
-## Estrutura
+## Estrutura !!!!!!NAO MUDAR!!!!!!
 
 ```txt
 wiki-site/
@@ -32,3 +32,4 @@ wiki-site/
 └── assets/
     ├── images/            # Imagens
     └── icons/             # Ícones e logos
+
