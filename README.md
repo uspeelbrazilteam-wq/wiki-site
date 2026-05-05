@@ -6,7 +6,7 @@ Repositório do site institucional e base da wiki do time iGEM EEL-USP-BRAZIL.
 
 Este site serve como:
 
-- interface pública do projeto
+- interface pública do(S) projeto(S)
 - base estrutural da wiki iGEM
 - ponto de integração entre áreas (model, wetlab, human practices)
 
