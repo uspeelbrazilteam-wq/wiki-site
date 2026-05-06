@@ -1,532 +1,438 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iGEM EEL-USP-BRAZIL | Jornada de Inovação em Biossintética</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iGEM EEL-USP-BRAZIL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!-- Floating Logo -->
-    <div class="floating-logo">
-        <img src="logo-igem.svg" alt="iGEM EEL-USP-BRAZIL" class="logo">
-    </div>
 
-    <!-- Hamburger Menu -->
-    <div class="hamburger-menu">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-mark">●</span>
+      iGEM EEL-USP-BRAZIL
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="pages/project.html">Project</a></li>
+      <li><a href="pages/model.html">Model</a></li>
+      <li><a href="pages/wetlab.html">Wetlab</a></li>
+      <li><a href="pages/human-practices.html">Human Practices</a></li>
+      <li><a href="pages/team.html">Team</a></li>
+      <li><a href="pages/safety.html">Safety</a></li>
+      <li><a href="pages/sponsors.html">Sponsors</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Synthetic Biology · Lorena, SP · Brasil
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">iGEM</span>
+        <span class="hero-title-line accent">EEL-USP</span>
+        <span class="hero-title-line">BRAZIL</span>
+      </h1>
+      <p class="hero-sub">
+        Engenharia genética de ponta nascida no interior paulista.<br>
+        Desde 2019, construindo ciência que compete com o mundo.
+      </p>
+      <div class="hero-cta">
+        <a href="#timeline" class="btn-primary">Nossa história</a>
+        <a href="#project-current" class="btn-ghost">Projeto atual →</a>
+      </div>
+      <div class="hero-medals">
+        <div class="medal gold">
+          <span class="medal-icon">⬡</span>
+          <span class="medal-label">Gold<br>2024</span>
         </div>
-        
-        <!-- Dropdown Menu -->
-        <nav class="dropdown-menu">
-            <ul class="dropdown-items">
-                  <li><a href="#home">Início</a></li>
-                  <li><a href="pages/project.html">Project</a></li>
-                  <li><a href="pages/model.html">Model</a></li>
-                  <li><a href="pages/wetlab.html">Wetlab</a></li>
-                  <li><a href="pages/human-practices.html">Human Practices</a></li>
-                  <li><a href="pages/team.html">Team</a></li>
-                  <li><a href="pages/safety.html">Safety</a></li>
-                  <li><a href="pages/sponsors.html">Sponsors</a></li>
+        <div class="medal silver">
+          <span class="medal-icon">⬡</span>
+          <span class="medal-label">Silver<br>2023</span>
+        </div>
+        <div class="medal bronze">
+          <span class="medal-icon">⬡</span>
+          <span class="medal-label">Bronze<br>2021</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">scroll</div>
+  </section>
+
+  <!-- PROJETO ATUAL — PLACEHOLDER -->
+  <section class="section project-highlight" id="project-current">
+    <div class="container">
+      <div class="section-label">Projeto 2025</div>
+      <div class="project-highlight-grid">
+        <div class="project-highlight-text">
+          <h2 class="section-heading">Em Desenvolvimento</h2>
+          <p class="project-highlight-desc">
+            O projeto deste ciclo está sendo desenvolvido pelo time. Em breve, detalhes sobre a proposta científica, abordagem experimental e impacto esperado estarão disponíveis aqui.
+          </p>
+          <div class="wip-tags">
+            <span class="wip-tag">Wetlab</span>
+            <span class="wip-tag">Model</span>
+            <span class="wip-tag">Human Practices</span>
+          </div>
+          <a href="pages/project.html" class="btn-primary" style="margin-top:2rem; display:inline-flex;">Ver página do projeto →</a>
+        </div>
+        <div class="project-highlight-visual">
+          <div class="wip-box">
+            <div class="wip-box-label">
+              <span class="wip-dot"></span>
+              Em construção
+            </div>
+            <div class="wip-dna">
+              <!-- DNA helix SVG decorativo -->
+              <svg viewBox="0 0 120 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="dna-svg">
+                <path d="M20 10 Q60 50 100 10 Q60 50 20 10" stroke="var(--accent)" stroke-width="1.5" opacity="0.3"/>
+                <path d="M20 50 Q60 90 100 50" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
+                <line x1="20" y1="50" x2="100" y2="50" stroke="var(--accent)" stroke-width="1" opacity="0.4"/>
+                <path d="M20 90 Q60 130 100 90" stroke="var(--accent)" stroke-width="1.5" opacity="0.6"/>
+                <line x1="20" y1="90" x2="100" y2="90" stroke="var(--accent)" stroke-width="1" opacity="0.4"/>
+                <path d="M20 130 Q60 170 100 130" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
+                <line x1="20" y1="130" x2="100" y2="130" stroke="var(--accent)" stroke-width="1" opacity="0.4"/>
+                <path d="M20 170 Q60 210 100 170" stroke="var(--accent)" stroke-width="1.5" opacity="0.6"/>
+                <line x1="20" y1="170" x2="100" y2="170" stroke="var(--accent)" stroke-width="1" opacity="0.4"/>
+                <path d="M20 210 Q60 250 100 210" stroke="var(--accent)" stroke-width="1.5" opacity="0.4"/>
+                <line x1="20" y1="210" x2="100" y2="210" stroke="var(--accent)" stroke-width="1" opacity="0.3"/>
+                <!-- dots -->
+                <circle cx="20" cy="50" r="3" fill="var(--accent)" opacity="0.7"/>
+                <circle cx="100" cy="50" r="3" fill="var(--accent)" opacity="0.7"/>
+                <circle cx="20" cy="90" r="3" fill="var(--accent)" opacity="0.7"/>
+                <circle cx="100" cy="90" r="3" fill="var(--accent)" opacity="0.7"/>
+                <circle cx="20" cy="130" r="3" fill="var(--accent)" opacity="0.7"/>
+                <circle cx="100" cy="130" r="3" fill="var(--accent)" opacity="0.7"/>
+                <circle cx="20" cy="170" r="3" fill="var(--accent)" opacity="0.7"/>
+                <circle cx="100" cy="170" r="3" fill="var(--accent)" opacity="0.7"/>
+                <circle cx="20" cy="210" r="3" fill="var(--accent)" opacity="0.5"/>
+                <circle cx="100" cy="210" r="3" fill="var(--accent)" opacity="0.5"/>
+              </svg>
+            </div>
+            <p class="wip-placeholder-text">Informações sobre o projeto 2025 em breve.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <div class="section-label">Histórico</div>
+      <h2 class="section-heading">Nossa trajetória</h2>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2019</div>
+          <div class="tl-connector"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <h3>Fundação</h3>
+            <p>Primeiros passos do time iGEM EEL-USP-BRAZIL. Uma equipe pequena com uma visão grande: fazer biologia sintética de ponta em Lorena.</p>
+            <div class="tl-tags"><span>Fundação</span><span>Primeiros membros</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2020</div>
+          <div class="tl-connector"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <h3>Primeira participação iGEM</h3>
+            <p>Estreia na competição durante a pandemia. Superamos limitações de infraestrutura e desenvolvemos o projeto remotamente.</p>
+            <div class="tl-tags"><span>Estreia iGEM</span><span>Remote lab</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2021</div>
+          <div class="tl-connector"><div class="tl-dot dot-bronze"></div></div>
+          <div class="tl-card">
+            <h3>Medalha de Bronze</h3>
+            <p>Primeira conquista internacional. Reconhecimento que validou nosso trabalho e motivou o crescimento do time.</p>
+            <div class="tl-tags"><span class="tag-bronze">Bronze</span><span>Primeira medalha</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2022</div>
+          <div class="tl-connector"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <h3>Expansão e divulgação</h3>
+            <p>Crescimento do time, novas frentes de trabalho e início das atividades de divulgação científica em escolas públicas.</p>
+            <div class="tl-tags"><span>Crescimento</span><span>Outreach</span><span>Parcerias</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2023</div>
+          <div class="tl-connector"><div class="tl-dot dot-silver"></div></div>
+          <div class="tl-card">
+            <h3>Medalha de Prata</h3>
+            <p>Consolidação como referência em biossintética na América Latina. Reconhecimento em múltiplas categorias da competição.</p>
+            <div class="tl-tags"><span class="tag-silver">Silver</span><span>Best Human Practices</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2024</div>
+          <div class="tl-connector"><div class="tl-dot dot-gold"></div></div>
+          <div class="tl-card">
+            <h3>Medalha de Ouro</h3>
+            <p>Maior conquista da história do time. Projeto reconhecido globalmente pela iGEM Foundation.</p>
+            <div class="tl-tags"><span class="tag-gold">Gold</span><span>Top Project</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2025</div>
+          <div class="tl-connector"><div class="tl-dot dot-wip"></div></div>
+          <div class="tl-card tl-card-wip">
+            <div class="wip-inline-badge"><span class="wip-dot"></span> Em desenvolvimento</div>
+            <h3>Projeto 2025</h3>
+            <p>Novo ciclo em andamento. O time está desenvolvendo proposta, experimentos e parcerias para a próxima competição.</p>
+            <div class="tl-tags"><span>Em breve</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE — PLACEHOLDER -->
+  <section class="section section-alt" id="team">
+    <div class="container">
+      <div class="section-label">Time</div>
+      <h2 class="section-heading">Quem somos</h2>
+      <p class="section-desc">
+        O time é formado por estudantes de graduação da EEL-USP cobrindo todas as frentes de um projeto iGEM: wetlab, modelagem computacional, human practices, design e gestão.
+      </p>
+      <div class="placeholder-grid">
+        <div class="placeholder-card">
+          <a href="pages/team.html" class="placeholder-link">
+            <div class="placeholder-icon">◈</div>
+            <div>
+              <strong>Time 2025</strong>
+              <p>Página em desenvolvimento</p>
+            </div>
+            <span class="placeholder-arrow">→</span>
+          </a>
+        </div>
+        <!-- ESPAÇO PARA FOTOS DE EQUIPES ANTERIORES -->
+        <div class="placeholder-card placeholder-card-dim">
+          <div class="placeholder-icon">◈</div>
+          <div>
+            <strong>Galeria de equipes anteriores</strong>
+            <p>Em breve — 2019 a 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBPÁGINAS / NAVEGAÇÃO -->
+  <section class="section" id="pages">
+    <div class="container">
+      <div class="section-label">Explore</div>
+      <h2 class="section-heading">Conteúdo do wiki</h2>
+      <div class="pages-grid">
+
+        <a href="pages/project.html" class="page-card">
+          <div class="page-card-num">01</div>
+          <h3>Project</h3>
+          <p>Descrição do projeto, motivação científica e objetivos.</p>
+          <span class="page-card-tag wip">Em desenvolvimento</span>
+        </a>
+
+        <a href="pages/model.html" class="page-card">
+          <div class="page-card-num">02</div>
+          <h3>Model</h3>
+          <p>Modelagem computacional e simulações do sistema biológico.</p>
+          <span class="page-card-tag wip">Em desenvolvimento</span>
+        </a>
+
+        <a href="pages/wetlab.html" class="page-card">
+          <div class="page-card-num">03</div>
+          <h3>Wetlab</h3>
+          <p>Protocolos, experimentos e resultados laboratoriais.</p>
+          <span class="page-card-tag wip">Em desenvolvimento</span>
+        </a>
+
+        <a href="pages/human-practices.html" class="page-card">
+          <div class="page-card-num">04</div>
+          <h3>Human Practices</h3>
+          <p>Engajamento com a sociedade e impacto do projeto.</p>
+          <span class="page-card-tag wip">Em desenvolvimento</span>
+        </a>
+
+        <a href="pages/team.html" class="page-card">
+          <div class="page-card-num">05</div>
+          <h3>Team</h3>
+          <p>Conheça os membros do time 2025.</p>
+          <span class="page-card-tag wip">Em desenvolvimento</span>
+        </a>
+
+        <a href="pages/safety.html" class="page-card">
+          <div class="page-card-num">06</div>
+          <h3>Safety</h3>
+          <p>Protocolos de segurança e boas práticas do laboratório.</p>
+          <span class="page-card-tag wip">Em desenvolvimento</span>
+        </a>
+
+        <a href="pages/sponsors.html" class="page-card">
+          <div class="page-card-num">07</div>
+          <h3>Sponsors</h3>
+          <p>Parceiros e apoiadores que tornam o projeto possível.</p>
+          <span class="page-card-tag wip">Em desenvolvimento</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WIKIS ANTERIORES -->
+  <section class="section section-alt" id="wikis">
+    <div class="container">
+      <div class="section-label">Arquivo</div>
+      <h2 class="section-heading">Wikis anteriores</h2>
+      <div class="wikis-list">
+        <a href="#" class="wiki-row">
+          <span class="wiki-year">2024</span>
+          <span class="wiki-title">Projeto 2024</span>
+          <span class="wiki-medal gold-text">Gold ●</span>
+          <span class="wiki-arrow">↗</span>
+        </a>
+        <a href="#" class="wiki-row">
+          <span class="wiki-year">2023</span>
+          <span class="wiki-title">Projeto 2023</span>
+          <span class="wiki-medal silver-text">Silver ●</span>
+          <span class="wiki-arrow">↗</span>
+        </a>
+        <a href="#" class="wiki-row">
+          <span class="wiki-year">2022</span>
+          <span class="wiki-title">Projeto 2022</span>
+          <span class="wiki-medal">—</span>
+          <span class="wiki-arrow">↗</span>
+        </a>
+        <a href="#" class="wiki-row">
+          <span class="wiki-year">2021</span>
+          <span class="wiki-title">Projeto 2021</span>
+          <span class="wiki-medal bronze-text">Bronze ●</span>
+          <span class="wiki-arrow">↗</span>
+        </a>
+        <a href="#" class="wiki-row">
+          <span class="wiki-year">2020</span>
+          <span class="wiki-title">Projeto 2020</span>
+          <span class="wiki-medal">—</span>
+          <span class="wiki-arrow">↗</span>
+        </a>
+        <a href="#" class="wiki-row">
+          <span class="wiki-year">2019</span>
+          <span class="wiki-title">Projeto 2019</span>
+          <span class="wiki-medal">—</span>
+          <span class="wiki-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="nav-logo-mark">●</span>
+            iGEM EEL-USP-BRAZIL
+          </div>
+          <p>Biologia sintética de ponta nascida em Lorena, SP.<br>Competindo globalmente desde 2019.</p>
+        </div>
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Wiki</h4>
+            <ul>
+              <li><a href="pages/project.html">Project</a></li>
+              <li><a href="pages/model.html">Model</a></li>
+              <li><a href="pages/wetlab.html">Wetlab</a></li>
+              <li><a href="pages/human-practices.html">Human Practices</a></li>
             </ul>
-        </nav>
+          </div>
+          <div class="footer-col">
+            <h4>Time</h4>
+            <ul>
+              <li><a href="pages/team.html">Equipe</a></li>
+              <li><a href="pages/safety.html">Safety</a></li>
+              <li><a href="pages/sponsors.html">Sponsors</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contato</h4>
+            <ul>
+              <li><a href="mailto:igem@eel.usp.br">igem@eel.usp.br</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 iGEM EEL-USP-BRAZIL</span>
+        <span>Desenvolvido pelo time SIS/HARD (e Orlando)</span>
+      </div>
     </div>
+  </footer>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="hero-background">
-            <div class="particles"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-logo">
-                <div class="logo-animation">
-                    🧬
-                </div>
-            </div>
-            <h1 class="hero-title">
-                <span class="typing-text" data-text="iGEM EEL-USP-BRAZIL">iGEM EEL-USP-BRAZIL</span>
-            </h1>
-            <p class="hero-subtitle">
-                Construindo o futuro da biotecnologia sintética desde 2019
-            </p>
-            <p class="hero-description">
-                Uma jornada de perseverança, inovação e excelência científica que transcende as barreiras geográficas e de recursos para criar tecnologia de ponta em biossintética.
-            </p>
-            <div class="hero-buttons">
-                <button class="btn-primary" onclick="scrollToSection('timeline')">
-                    <i class="fas fa-rocket"></i>
-                    Explore nossa história
-                </button>
-                <button class="btn-secondary" onclick="scrollToSection('projects')">
-                    <i class="fas fa-microscope"></i>
-                    Nossos projetos
-                </button>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </header>
+  <script src="scripts/main.js"></script>
+  <script>
+    // Nav scroll behavior
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav-scrolled', window.scrollY > 60);
+    }, { passive: true });
 
-    <!-- Timeline Section -->
-    <section id="timeline" class="timeline-section">
-        <div class="container">
-            <h2 class="section-title">Nossa Jornada no Tempo</h2>
-            <p class="section-subtitle">A evolução de um sonho em realidade científica</p>
-            
-            <div class="timeline">
-                <div class="timeline-item" data-year="2019">
-                    <div class="timeline-content">
-                        <div class="timeline-icon">🌱</div>
-                        <h3>O Início da Jornada</h3>
-                        <span class="timeline-year">2019</span>
-                        <p>Fundação do time iGEM EEL-USP-BRAZIL. Primeiros passos em uma jornada que mudaria nossas vidas e o cenário científico da nossa região.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Fundação</span>
-                            <span class="tag">Primeiros membros</span>
-                        </div>
-                    </div>
-                </div>
+    // Hamburger
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      links.classList.toggle('open');
+    });
 
-                <div class="timeline-item" data-year="2020">
-                    <div class="timeline-content">
-                        <div class="timeline-icon">🧬</div>
-                        <h3>Primeira Participação</h3>
-                        <span class="timeline-year">2020</span>
-                        <p>Nossa estreia na competição iGEM Global, enfrentando desafios únicos da pandemia e limitações de infraestrutura com determinação inabalável.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Estreia iGEM</span>
-                            <span class="tag">Desafios COVID</span>
-                        </div>
-                    </div>
-                </div>
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
 
-                <div class="timeline-item" data-year="2021">
-                    <div class="timeline-content">
-                        <div class="timeline-icon">🏆</div>
-                        <h3>Primeiro Reconhecimento</h3>
-                        <span class="timeline-year">2021</span>
-                        <p>Conquista da primeira medalha de Bronze, provando que a excelência científica pode florescer mesmo em condições adversas.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Medalha Bronze</span>
-                            <span class="tag">Reconhecimento</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-year="2022">
-                    <div class="timeline-content">
-                        <div class="timeline-icon">🚀</div>
-                        <h3>Expansão e Crescimento</h3>
-                        <span class="timeline-year">2022</span>
-                        <p>Ampliação da equipe e diversificação de competências. Início das atividades de divulgação científica e parcerias estratégicas.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Crescimento</span>
-                            <span class="tag">Divulgação</span>
-                            <span class="tag">Parcerias</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-year="2023">
-                    <div class="timeline-content">
-                        <div class="timeline-icon">🌟</div>
-                        <h3>Consolidação da Excelência</h3>
-                        <span class="timeline-year">2023</span>
-                        <p>Medalha de Prata e reconhecimento especial. Estabelecimento como referência em biossintética na América Latina.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Medalha Prata</span>
-                            <span class="tag">Referência Latino-americana</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-year="2024">
-                    <div class="timeline-content">
-                        <div class="timeline-icon">🎯</div>
-                        <h3>Rumo ao Futuro</h3>
-                        <span class="timeline-year">2024</span>
-                        <p>Preparação para uma nova era de inovação e impacto. Planejamento estratégico para expansão internacional e parcerias industriais.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Estratégia 2025+</span>
-                            <span class="tag">Visão Internacional</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Evolution Section -->
-    <section id="team" class="team-section">
-        <div class="container">
-            <h2 class="section-title">Evolução da Nossa Família</h2>
-            <p class="section-subtitle">Cada rosto conta uma história de dedicação e superação</p>
-            
-            <div class="team-filter">
-                <button class="filter-btn active" data-year="all">Todos os Anos</button>
-                <button class="filter-btn" data-year="2019">2019</button>
-                <button class="filter-btn" data-year="2020">2020</button>
-                <button class="filter-btn" data-year="2021">2021</button>
-                <button class="filter-btn" data-year="2022">2022</button>
-                <button class="filter-btn" data-year="2023">2023</button>
-                <button class="filter-btn" data-year="2024">2024</button>
-            </div>
-
-            <div class="team-gallery">
-                <figure class="team-photo" data-year="2019">
-                    <img src="team-2019.jpg" alt="Equipe 2019">
-                    <figcaption>
-                        <h3>Fundadores 2019</h3>
-                        <p>Os pioneiros que ousaram sonhar</p>
-                    </figcaption>
-                </figure>
-                
-                <figure class="team-photo" data-year="2020">
-                    <img src="team-2020.jpg" alt="Equipe 2020">
-                    <figcaption>
-                        <h3>Guerreiros 2020</h3>
-                        <p>Unidos pela ciência em tempos difíceis</p>
-                    </figcaption>
-                </figure>
-                
-                <figure class="team-photo" data-year="2021">
-                    <img src="team-2021.jpg" alt="Equipe 2021">
-                    <figcaption>
-                        <h3>Conquistadores 2021</h3>
-                        <p>O sabor da primeira vitória</p>
-                    </figcaption>
-                </figure>
-                
-                <figure class="team-photo" data-year="2022">
-                    <img src="team-2022.jpg" alt="Equipe 2022">
-                    <figcaption>
-                        <h3>Expansores 2022</h3>
-                        <p>Crescendo em número e impacto</p>
-                    </figcaption>
-                </figure>
-                
-                <figure class="team-photo" data-year="2023">
-                    <img src="team-2023.jpg" alt="Equipe 2023">
-                    <figcaption>
-                        <h3>Campeões 2023</h3>
-                        <p>Excelência reconhecida mundialmente</p>
-                    </figcaption>
-                </figure>
-                
-                <figure class="team-photo" data-year="2024">
-                    <img src="team-2024.jpg" alt="Equipe 2024">
-                    <figcaption>
-                        <h3>Visionários 2024</h3>
-                        <p>Preparando o futuro da biotecnologia</p>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">Projetos que Mudaram o Mundo</h2>
-            <p class="section-subtitle">Inovação científica nascida da perseverança e paixão</p>
-            
-            <div class="projects-carousel">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="project-2019.jpg" alt="Projeto 2019">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Biosensor de Metais Pesados</h3>
-                        <span class="project-year">2019</span>
-                        <p>Desenvolvemos um sistema biológico capaz de detectar metais pesados em água, contribuindo para o monitoramento ambiental.</p>
-                        <div class="project-stats">
-                            <span><i class="fas fa-users"></i> 8 membros</span>
-                            <span><i class="fas fa-clock"></i> 8 meses</span>
-                        </div>
-                        <a href="#" class="project-link">Ver Wiki <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="project-2020.jpg" alt="Projeto 2020">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Biodegradação de Plásticos</h3>
-                        <span class="project-year">2020</span>
-                        <p>Sistema enzimático para degradação de microplásticos, enfrentando um dos maiores desafios ambientais da atualidade.</p>
-                        <div class="project-stats">
-                            <span><i class="fas fa-users"></i> 12 membros</span>
-                            <span><i class="fas fa-clock"></i> 10 meses</span>
-                        </div>
-                        <a href="#" class="project-link">Ver Wiki <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="project-2021.jpg" alt="Projeto 2021">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Produção de Biomateriais</h3>
-                        <span class="project-year">2021</span>
-                        <p>Engenharia metabólica para produção sustentável de biomateriais com aplicações industriais inovadoras.</p>
-                        <div class="project-stats">
-                            <span><i class="fas fa-users"></i> 15 membros</span>
-                            <span><i class="fas fa-clock"></i> 12 meses</span>
-                        </div>
-                        <a href="#" class="project-link">Ver Wiki <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="project-2022.jpg" alt="Projeto 2022">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Terapia Gênica Avançada</h3>
-                        <span class="project-year">2022</span>
-                        <p>Sistema de entrega direcionada para terapias gênicas, abrindo novos horizontes no tratamento de doenças raras.</p>
-                        <div class="project-stats">
-                            <span><i class="fas fa-users"></i> 18 membros</span>
-                            <span><i class="fas fa-clock"></i> 14 meses</span>
-                        </div>
-                        <a href="#" class="project-link">Ver Wiki <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carousel-controls">
-                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards" class="awards-section">
-        <div class="container">
-            <h2 class="section-title">Prêmios e Reconhecimentos</h2>
-            <p class="section-subtitle">Cada conquista representa superação e excelência científica</p>
-            
-            <div class="awards-grid">
-                <div class="award-card gold">
-                    <div class="award-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>Best Project Award</h3>
-                    <span class="award-year">2023</span>
-                    <p>Reconhecimento pela inovação e impacto científico do nosso projeto</p>
-                </div>
-
-                <div class="award-card silver">
-                    <div class="award-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Medalha de Prata</h3>
-                    <span class="award-year">2023</span>
-                    <p>Excelência em todas as categorias avaliadas na competição</p>
-                </div>
-
-                <div class="award-card bronze">
-                    <div class="award-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Medalha de Bronze</h3>
-                    <span class="award-year">2021</span>
-                    <p>Nossa primeira conquista internacional em biotecnologia</p>
-                </div>
-
-                <div class="award-card special">
-                    <div class="award-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Best Human Practices</h3>
-                    <span class="award-year">2022</span>
-                    <p>Reconhecimento pelo impacto social de nossas iniciativas</p>
-                </div>
-
-                <div class="award-card special">
-                    <div class="award-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3>Destaque Latino-americano</h3>
-                    <span class="award-year">2023</span>
-                    <p>Referência em biossintética na América Latina</p>
-                </div>
-
-                <div class="award-card special">
-                    <div class="award-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Partnership Excellence</h3>
-                    <span class="award-year">2024</span>
-                    <p>Excelência em colaborações e parcerias estratégicas</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Impact Section -->
-    <section id="impact" class="impact-section">
-        <div class="container">
-            <h2 class="section-title">Nosso Impacto no Mundo</h2>
-            <p class="section-subtitle">Números que contam a história da nossa transformação</p>
-            
-            <div class="impact-stats">
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number" data-count="150">0</div>
-                    <div class="stat-label">Membros Formados</div>
-                    <p>Profissionais altamente capacitados em biotecnologia</p>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <div class="stat-number" data-count="25">0</div>
-                    <div class="stat-label">Projetos Desenvolvidos</div>
-                    <p>Soluções inovadoras para desafios globais</p>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="stat-number" data-count="500">0</div>
-                    <div class="stat-label">Estudantes Impactados</div>
-                    <p>Através de workshops e atividades educacionais</p>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div class="stat-number" data-count="30">0</div>
-                    <div class="stat-label">Parcerias Estabelecidas</div>
-                    <p>Colaborações com universidades e empresas</p>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="stat-number" data-count="45">0</div>
-                    <div class="stat-label">Publicações Científicas</div>
-                    <p>Contribuições para o conhecimento mundial</p>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="stat-number" data-count="15">0</div>
-                    <div class="stat-label">Países Alcançados</div>
-                    <p>Impacto internacional das nossas pesquisas</p>
-                </div>
-            </div>
-
-            <div class="hero-journey">
-                <h3>Nossa Jornada do Herói</h3>
-                <p>
-                    Em uma região onde a infraestrutura científica é limitada e os recursos são escassos, 
-                    nasceu um sonho: fazer tecnologia de ponta em biotecnologia sintética. Nossa jornada 
-                    é a de verdadeiros heróis da ciência, enfrentando adversidades financeiras, limitações 
-                    geográficas e desafios técnicos com coragem, determinação e paixão pela inovação.
-                </p>
-                <p>
-                    Cada projeto desenvolvido, cada medalha conquistada e cada parceria estabelecida 
-                    representa uma vitória contra as probabilidades. Somos mais que um time de competição - 
-                    somos agentes de transformação, criando pontes entre a ciência de fronteira e as 
-                    necessidades reais da sociedade.
-                </p>
-                <div class="journey-highlight">
-                    <i class="fas fa-quote-left"></i>
-                    <blockquote>
-                        "Não é sobre onde você começa, mas sobre até onde você está disposto a ir. 
-                        Nossa força vem da nossa origem, nossa excelência vem da nossa determinação."
-                    </blockquote>
-                    <cite>- Time iGEM EEL-USP-BRAZIL</cite>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-particles"></div>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>iGEM EEL-USP-BRAZIL</h3>
-                    <p>Construindo o futuro da biotecnologia sintética com paixão, perseverança e excelência científica.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Wikis por Ano</h3>
-                    <ul class="wiki-links">
-                        <li><a href="#">Wiki 2019</a></li>
-                        <li><a href="#">Wiki 2020</a></li>
-                        <li><a href="#">Wiki 2021</a></li>
-                        <li><a href="#">Wiki 2022</a></li>
-                        <li><a href="#">Wiki 2023</a></li>
-                        <li><a href="#">Wiki 2024</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> igem@eel.usp.br</li>
-                        <li><i class="fas fa-phone"></i> +55 12 3159-5000</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Lorena, SP - Brasil</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Parceiros</h3>
-                    <div class="partner-logos">
-                        <img src="usp-logo.png" alt="USP">
-                        <img src="igem-logo.png" alt="iGEM Foundation">
-                        <img src="eel-logo.png" alt="EEL">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 iGEM EEL-USP-BRAZIL. Todos os direitos reservados.</p>
-                <p>Desenvolvido com ❤️ pela equipe de SIS/HARD (e Orlando) do time.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="scripts/main.js"></script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          links.classList.remove('open');
+          toggle.classList.remove('open');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
