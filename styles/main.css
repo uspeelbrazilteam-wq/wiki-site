@@ -1,7 +1,4 @@
 /* ─────────────────────────────────────────────────
-   iGEM EEL-USP-BRAZIL — main.css
-   Aesthetic: iGEM EEL-USP-BRAZIL / dark institutional / technical
-   ───────────────────────────────────────────────── */
 
 /* ── TOKENS ── */
 :root {
@@ -198,8 +195,9 @@ ul { list-style: none; }
   flex-direction: column;
 }
 .hero-title-line { display: block; }
-.hero-title-line.accent { color: var(--accent); }
-.hero-sub {
+.hero-title-line.accent {
+  color: #33b5e5;
+}
   font-size: 1.05rem;
   color: var(--text-mid);
   max-width: 500px;
