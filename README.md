@@ -2,6 +2,8 @@
 
 Repositório do site institucional e base da wiki do time iGEM EEL-USP-BRAZIL.
 
+https://uspeelbrazilteam-wq.github.io/wiki-site/
+
 ## Objetivo
 
 Este site serve como:
