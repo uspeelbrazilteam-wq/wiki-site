@@ -1,32 +1,32 @@
 /* ─────────────────────────────────────────────────
    iGEM EEL-USP-BRAZIL — main.css
-   Aesthetic: dark bio-lab / editorial / organic
+   Aesthetic: iGEM EEL-USP-BRAZIL / dark institutional / technical
    ───────────────────────────────────────────────── */
 
 /* ── TOKENS ── */
 :root {
-  --bg:        #0a0c0b;
-  --bg-alt:    #0e1210;
-  --surface:   #131a15;
-  --surface-2: #1a2420;
-  --border:    rgba(80, 200, 120, 0.12);
-  --border-hi: rgba(80, 200, 120, 0.28);
+  --bg:        #071226;
+  --bg-alt:    #0c1830;
+  --surface:   #101d38;
+  --surface-2: #142645;
+  --border:    rgba(211, 17, 89, 0.16);
+  --border-hi: rgba(51, 181, 229, 0.34);
 
-  --accent:    #4fcb7a;   /* bio green */
-  --accent-2:  #a8e6bc;   /* light green */
-  --accent-dim:#2a6642;
+  --accent:    #d31159;
+  --accent-2:  #33b5e5;
+  --accent-dim:#7a0b36;
 
-  --gold:   #d4af37;
-  --silver: #a8b2b8;
-  --bronze: #b87333;
+  --gold:   #f3c74f;
+  --silver: #b8c6d8;
+  --bronze: #c27a3a;
 
-  --text:     #e8f0ea;
-  --text-mid: #8fa897;
-  --text-dim: #4a5e50;
+  --text:     #f4f7fb;
+  --text-mid: #91a0b8;
+  --text-dim: #596982;
 
   --font-display: 'Sora', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'IBM Plex Mono', monospace;
 
   --radius:  6px;
   --radius-lg: 12px;
@@ -69,7 +69,7 @@ ul { list-style: none; }
   border-bottom: 1px solid transparent;
 }
 .nav-scrolled {
-  background: rgba(10, 12, 11, 0.92);
+  background: rgba(7, 18, 38, 0.92);
   backdrop-filter: blur(12px);
   border-color: var(--border);
 }
@@ -108,7 +108,7 @@ ul { list-style: none; }
 }
 .nav-links a:hover {
   color: var(--accent);
-  background: rgba(79, 203, 122, 0.08);
+  background: rgba(211, 17, 89, 0.10);
 }
 .nav-toggle {
   display: none;
@@ -144,8 +144,8 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(79, 203, 122, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(79, 203, 122, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(211, 17, 89, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(211, 17, 89, 0.045) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: radial-gradient(ellipse 80% 80% at 50% 40%, black 20%, transparent 80%);
 }
@@ -155,7 +155,9 @@ ul { list-style: none; }
   left: 50%;
   transform: translateX(-50%);
   width: 600px; height: 400px;
-  background: radial-gradient(ellipse, rgba(79, 203, 122, 0.08) 0%, transparent 70%);
+  background:
+    radial-gradient(ellipse at 40% 50%, rgba(211, 17, 89, 0.14) 0%, transparent 62%),
+    radial-gradient(ellipse at 62% 45%, rgba(51, 181, 229, 0.10) 0%, transparent 68%);
   pointer-events: none;
 }
 .hero-inner {
@@ -178,7 +180,7 @@ ul { list-style: none; }
   padding: 0.4rem 1rem;
   border: 1px solid var(--border);
   border-radius: 99px;
-  background: rgba(79, 203, 122, 0.04);
+  background: rgba(211, 17, 89, 0.045);
 }
 .badge-dot {
   width: 6px; height: 6px;
@@ -346,8 +348,8 @@ ul { list-style: none; }
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--accent);
-  background: rgba(79, 203, 122, 0.1);
-  border: 1px solid rgba(79, 203, 122, 0.2);
+  background: rgba(211, 17, 89, 0.11);
+  border: 1px solid rgba(51, 181, 229, 0.24);
   padding: 0.25rem 0.6rem;
   border-radius: 99px;
   letter-spacing: 0.04em;
@@ -447,7 +449,7 @@ ul { list-style: none; }
 .tl-dot.dot-gold   { border-color: var(--gold); background: rgba(212,175,55,0.15); }
 .tl-dot.dot-silver { border-color: var(--silver); background: rgba(168,178,184,0.15); }
 .tl-dot.dot-bronze { border-color: var(--bronze); background: rgba(184,115,51,0.15); }
-.tl-dot.dot-wip    { border-color: var(--accent); background: rgba(79,203,122,0.1); animation: pulse-dot 2s ease-in-out infinite; }
+.tl-dot.dot-wip    { border-color: var(--accent); background: rgba(211,17,89,0.12); animation: pulse-dot 2s ease-in-out infinite; }
 .tl-connector::after {
   content: '';
   display: block;
@@ -496,7 +498,7 @@ ul { list-style: none; }
 .tl-tags .tag-gold   { color: var(--gold); border-color: rgba(212,175,55,0.3); background: rgba(212,175,55,0.08); }
 .tl-tags .tag-silver { color: var(--silver); border-color: rgba(168,178,184,0.3); background: rgba(168,178,184,0.08); }
 .tl-tags .tag-bronze { color: var(--bronze); border-color: rgba(184,115,51,0.3); background: rgba(184,115,51,0.08); }
-.tl-card-wip { border-color: rgba(79, 203, 122, 0.2); }
+.tl-card-wip { border-color: rgba(51, 181, 229, 0.24); }
 .wip-inline-badge {
   display: inline-flex;
   align-items: center;
@@ -604,8 +606,8 @@ ul { list-style: none; }
 }
 .page-card-tag.wip {
   color: var(--accent);
-  background: rgba(79, 203, 122, 0.08);
-  border: 1px solid rgba(79, 203, 122, 0.2);
+  background: rgba(211, 17, 89, 0.10);
+  border: 1px solid rgba(51, 181, 229, 0.24);
 }
 
 /* ── WIKIS LIST ── */
@@ -739,7 +741,7 @@ ul { list-style: none; }
     position: fixed;
     top: var(--nav-h);
     left: 0; right: 0;
-    background: rgba(10, 12, 11, 0.97);
+    background: rgba(7, 18, 38, 0.97);
     flex-direction: column;
     padding: 1.5rem;
     gap: 0.25rem;
